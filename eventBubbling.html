@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -48,5 +48,58 @@
         <div onclick="innerDiv()" class="innerDiv">Inner div</div>
     </div>
     </div>    
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance JS</title>
+</head>
+<style>
+    .container{
+        background-color: rgb(206, 176, 121);
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+    .container1{
+        background-color: aquamarine;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+    .container2{
+        background-color: beige;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+</style>
+<script>
+    function firstDiv(){
+        event.stopPropagation()
+        alert("First div was clicked")
+    }
+    function secondDiv(){
+        event.stopPropagation()
+        alert("Second div was clicked")
+    }
+    function thirdDiv(){
+        event.stopPropagation()
+        alert("Third div was clicked")
+    }
+</script>
+<body>
+    <div class="container" onclick="firstDiv()">First Div
+        <div class="container1" onclick="secondDiv()">Second div
+            <div class="container2" onclick="thirdDiv()">Third Div
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>
