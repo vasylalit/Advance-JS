@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance JS</title>
+</head>
+
+<style>
+    .firstDiv{
+        background-color: aqua;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+    .middleDiv{
+        background-color: aquamarine;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+    .innerDiv{
+        background-color: bisque;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+</style>
+<script>
+    function firstDiv(){
+        event.stopPropagation()
+        alert("First div here")
+    }
+    function middleDiv(){
+        event.stopPropagation()
+        alert("Middle div here")
+    }
+    function innerDiv(){
+        event.stopPropagation()
+        alert("Inner div here")
+    }
+</script>
+
+<body>
+    <div onclick="firstDiv()" class="firstDiv">outer div
+    <div onclick="middleDiv()" class="middleDiv">middle div
+        <div onclick="innerDiv()" class="innerDiv">Inner div</div>
+    </div>
+    </div>    
+</body>
+</html>
