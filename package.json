@@ -1,0 +1,22 @@
+{
+  "name": "advance-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "arrayFunctions_at().js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasylalit/Advance-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vasylalit/Advance-JS/issues"
+  },
+  "homepage": "https://github.com/vasylalit/Advance-JS#readme",
+  "dependencies": {
+    "wbm": "^1.1.16"
+  }
+}
