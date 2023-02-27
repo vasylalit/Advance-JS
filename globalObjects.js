@@ -2,6 +2,7 @@ var fruit = "apple"
 
 function testApple(){    //Here, a function will be called as glabal function, not a variable is global
     var fruit = "apple"
+    console.log(fruit)
 }
 testApple()
 
